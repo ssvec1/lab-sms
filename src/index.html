@@ -3,16 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Front End Web 100</title>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+        <h1>Tip Calculator</h1>
     </header>
     <main>
-        
+
+        </div>
+        <input type="number"
+               class="form-control"
+               aria-label="Amount (to the nearest dollar)"
+               id="txtBillAmount">
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
+        </div>
+
+        <div class="btn-group"
+             role="group"
+             aria-label="Basic example">
+            <button type="button"
+                    class="btn btn-secondary"
+                    id="btnTenPercent"
+                    value="10">10%</button>
+            <button type="button"
+                    class="btn btn-secondary"
+                    id="btnFifteenPercent"
+                    value="15">15%</button>
+            <button type="button"
+                    class="btn btn-secondary"
+                    id="btnTwentyPercent"
+                    value="20">20%</button>
+        </div>
+        <h2>You are tipping <span id=answer></span>%</h2>
+
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Bill Amount: $<span id=listBillAmount></span></li>
+                <li class="list-group-item">Tip Percentage: <span id=listTipPercent></span>%</li>
+                <li class="list-group-item">Amount of tip: $<span id=listTipAmount></span></li>
+                <li class="list-group-item">Total to be Paid: $<span id=listPaidAmount></span></li>
+
+            </ul>
+        </div>
+
     </main>
 </body>
 
